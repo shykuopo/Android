@@ -1,0 +1,7 @@
+#Fri Jun 02 21:39:03 CST 2017
+base.0=D\:\\andriod_project\\LoginRegister2\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_29ccc8526c198f8242ea8446e866b336a84639eb
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=D\:\\andriod_project\\LoginRegister2\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_1b6bb28486416400d6ad91bb35349eccd10fa389\\classes.dex
+base.1=D\:\\andriod_project\\LoginRegister2\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_1b6bb28486416400d6ad91bb35349eccd10fa389
+file.0=D\:\\andriod_project\\LoginRegister2\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_29ccc8526c198f8242ea8446e866b336a84639eb\\classes.dex

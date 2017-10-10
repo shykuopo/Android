@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_color"
+    android:background="@drawable/sky"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="tw.com.flag.toolguy.color">
+
+    <Button
+        android:text="開始遊戲"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="39dp"
+        android:id="@+id/button7"
+        android:onClick="set" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/airplane3"
+        android:id="@+id/imageButton"
+        android:layout_below="@+id/button7"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="121dp"
+        android:onClick="red" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/airplane2"
+        android:id="@+id/imageButton3"
+        android:layout_above="@+id/imageButton2"
+        android:layout_toRightOf="@+id/imageButton"
+        android:layout_toEndOf="@+id/imageButton"
+        android:onClick="yellow" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/airplane5"
+        android:id="@+id/imageButton5"
+        android:layout_alignBottom="@+id/imageButton3"
+        android:layout_toRightOf="@+id/imageButton3"
+        android:layout_toEndOf="@+id/imageButton3"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:onClick="blue" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageButton"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3"
+        android:id="@+id/textView4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:text="分數"
+        android:layout_alignBaseline="@+id/button7"
+        android:layout_alignBottom="@+id/button7"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="24dp"
+        android:layout_marginEnd="24dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:textSize="35dp"
+        android:text="字的顏色"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_marginTop="33dp"
+        android:layout_below="@+id/button7"
+        android:layout_toRightOf="@+id/imageButton"
+        android:layout_toEndOf="@+id/imageButton" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:text="題目"
+        android:layout_alignBaseline="@+id/textView"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_toLeftOf="@+id/imageButton2"
+        android:layout_toStartOf="@+id/imageButton2"
+        android:layout_marginRight="14dp"
+        android:layout_marginEnd="14dp" />
+
+    <Button
+        android:text="結束"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageButton4"
+        android:layout_alignLeft="@+id/button7"
+        android:layout_alignStart="@+id/button7"
+        android:layout_marginBottom="93dp"
+        android:id="@+id/button9"
+        android:onClick="goM2"
+        android:visibility="invisible" />
+
+    <VideoView
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/videoView4"
+        android:layout_width="2dp"
+        android:layout_height="2dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/airplane1"
+        android:id="@+id/imageButton2"
+        android:layout_marginTop="19dp"
+        android:onClick="black"
+        android:layout_below="@+id/imageButton"
+        android:layout_toLeftOf="@+id/imageButton4"
+        android:layout_toStartOf="@+id/imageButton4"
+        android:layout_marginRight="25dp"
+        android:layout_marginEnd="25dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/airplane4"
+        android:id="@+id/imageButton4"
+        android:onClick="green"
+        android:layout_alignBottom="@+id/imageButton2"
+        android:layout_toLeftOf="@+id/textView2"
+        android:layout_toStartOf="@+id/textView2" />
+</RelativeLayout>

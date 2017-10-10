@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.win81.audioandvideo.MainActivity">
+
+    <Button
+        android:text="選取歌曲"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/btnPickAudio"
+        android:onClick="onPick" />
+
+    <Button
+        android:text="選取影片"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:id="@+id/btnPickVideo"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/btnPickAudio"
+        android:layout_toEndOf="@+id/btnPickAudio"
+        android:onClick="onPick" />
+
+    <TextView
+        android:text="檔名"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnPickAudio"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="32dp"
+        android:id="@+id/txvName" />
+
+    <TextView
+        android:text="路徑"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txvName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="27dp"
+        android:id="@+id/txvUri" />
+
+    <Button
+        android:text="播放"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txvUri"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="38dp"
+        android:id="@+id/btnPlay"
+        android:onClick="onMpPlay" />
+
+    <Button
+        android:text="停止"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnPlay"
+        android:layout_alignLeft="@+id/btnPickVideo"
+        android:layout_alignStart="@+id/btnPickVideo"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:id="@+id/btnStop"
+        android:onClick="onMpStop" />
+
+    <CheckBox
+        android:text="重複播放"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnStop"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
+        android:id="@+id/ckbLoop"
+        android:onClick="onMpLoop"
+        android:checked="false" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_media_rew"
+        android:layout_below="@+id/btnPlay"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="27dp"
+        android:id="@+id/igbBackward"
+        android:onClick="onMpBackward" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_media_ff"
+        android:layout_alignBottom="@+id/igbBackward"
+        android:layout_toRightOf="@+id/igbBackward"
+        android:layout_toEndOf="@+id/igbBackward"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:id="@+id/imageButton2"
+        android:onClick="onMpForward" />
+
+</RelativeLayout>

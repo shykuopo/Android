@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "107872170568",
+    "firebase_url": "https://addadmod.firebaseio.com",
+    "project_id": "addadmod",
+    "storage_bucket": "addadmod.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:107872170568:android:802cacc2dd22dc4f",
+        "android_client_info": {
+          "package_name": "com.example.win81.addadmod"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "107872170568-9o1adgt1od7v1lrc6h3ancaj71mibjlp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.win81.addadmod",
+            "certificate_hash": "1d38433cab4b0a3ed8c2e0ee4e68c76e14545d9c"
+          }
+        },
+        {
+          "client_id": "107872170568-drihrm2itacn2crfjlpr60nnje9g82js.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC33XTSBiXdWtHX_XNFVKrSknzL6efg3XE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "107872170568-drihrm2itacn2crfjlpr60nnje9g82js.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
